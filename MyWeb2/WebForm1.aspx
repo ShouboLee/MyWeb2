@@ -17,6 +17,7 @@
         <p>
             <asp:Label ID="lbl_Result" runat="server" Text=""></asp:Label>
         </p>
+        <asp:Label ID="label_lsb" runat="server" Text="lsb:用作测试Git协作开发"></asp:Label>
     </form>
 </body>
 </html>
