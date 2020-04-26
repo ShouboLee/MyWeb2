@@ -14,12 +14,9 @@ namespace MyWeb2
 
         }
 
-        protected void btn_OK_Click(object sender, EventArgs e)
+        protected void Click(object sender, EventArgs e)
         {
-            if (txt_Name.Text == "")
-                lbl_Result.Text = "姓名不能为空！";
-            else
-                lbl_Result.Text = "Hello "+ txt_Name.Text + ",you have finish a web page!";
+            Response.Write("<script language=javascript>alter('确定');</" + "script>");
         }
     }
 }

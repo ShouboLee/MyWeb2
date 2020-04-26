@@ -69,8 +69,8 @@ C:\Users\16098\source\repos\MyWeb2\MyWeb2\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\16098\source\repos\MyWeb2\MyWeb2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\16098\source\repos\MyWeb2\MyWeb2\bin\zh-Hans\System.Web.Optimization.resources.dll
 C:\Users\16098\source\repos\MyWeb2\MyWeb2\bin\zh-Hans\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\16098\source\repos\MyWeb2\MyWeb2\obj\Debug\MyWeb2.csprojAssemblyReference.cache
 C:\Users\16098\source\repos\MyWeb2\MyWeb2\obj\Debug\MyWeb2.csproj.CoreCompileInputs.cache
 C:\Users\16098\source\repos\MyWeb2\MyWeb2\obj\Debug\MyWeb2.csproj.CopyComplete
 C:\Users\16098\source\repos\MyWeb2\MyWeb2\obj\Debug\MyWeb2.dll
 C:\Users\16098\source\repos\MyWeb2\MyWeb2\obj\Debug\MyWeb2.pdb
+C:\Users\16098\source\repos\MyWeb2\MyWeb2\obj\Debug\MyWeb2.csprojAssemblyReference.cache
