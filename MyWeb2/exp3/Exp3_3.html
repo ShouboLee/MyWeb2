@@ -1,0 +1,84 @@
+﻿<! DOCTYPE html PUBLIC "_//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>照片浏览器</title>
+    <link href="../CSS/PicBro.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var j = 1;
+        // next picture
+        function theNext() {
+            j++;
+            if (j == 17) {
+                window.alert("已经是最后一张。", "提示");
+                clearInterval(timerId);
+                j = 16;
+            }
+            var source = "photo" + j + ".jpg";
+            var placeholder = document.getElementById("myimage");
+            placeholder.setAttribute("src", source);
+        }
+        // 上一张照片
+        function theLast() {
+            j--;
+            if (j == 0) {
+                window.alert("已经是第一张。", "提示");
+                j = 1;
+            }
+            var source = "photo" + j + ".jpg";
+            var placeholder = document.getElementById("myimage");
+            placeholder.setAttribute("src", source);
+        }
+        // 切换图片
+        function selPic(i) {
+            var source = "photo" + i + ".jpg";
+            var placeholder = document.getElementById("myimage");
+            placeholder.setAttribute("src", source);
+            j = i;
+        }
+        // 自动切换
+        var timerId;
+        function autoChange() {
+            timerId = setInterval("theNext()", 2000);
+        }
+        // 停止切换
+        function stopChange() {
+            clearInterval(timerId);
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="title">The Browser 照片浏览</h1>
+    <div id=img>
+        <p>
+            <img src="../img/photo1.jpg" id="myimage" width=600 height=400 onclick="theNext()" />
+        </p>
+        <form>
+            <input type="button" value="下一张" onclick="theNext()" />
+            <input type="button" value="上一张" onclick="theLast()" />
+            <input type="button" value="自动切换" onclick="autoChange()" />
+            <input type="button" value="停止切换" onclick="stopChange()" />
+        </form>
+    </div>
+
+    <p class=smallPic>
+        <img id=p1 src="../img/photo1.jpg" onclick="selPic(1)" width=120 height=80 />
+        <img id=p2 src="../img/photo2.jpg" onclick="selPic(2)" width=120 height=80 />
+        <img id=p3 src="../img/photo3.jpg" onclick="selPic(3)" width=120 height=80 />
+        <img id=p4 src="../img/photo4.jpg" onclick="selPic(4)" width=120 height=80 />
+        <img id=p5 src="../img/photo5.jpg" onclick="selPic(5)" width=120 height=80 />
+        <img id=p6 src="../img/photo6.jpg" onclick="selPic(6)" width=120 height=80 />
+        <img id=p7 src="../img/photo7.jpg" onclick="selPic(7)" width=120 height=80 />
+        <img id=p8 src="../img/photo8.jpg" onclick="selPic(8)" width=120 height=80 />
+        <img id=p9 src="../img/photo9.jpg" onclick="selPic(9)" width=120 height=80 />
+        <img id=p10 src="../img/photo10.jpg" onclick="selPic(10)" width=120 height=80 />
+        <img id=p11 src="../img/photo11.jpg" onclick="selPic(11)" width=120 height=80 />
+        <img id=p12 src="../img/photo12.jpg" onclick="selPic(12)" width=120 height=80 />
+        <img id=p13 src="../img/photo13.jpg" onclick="selPic(13)" width=120 height=80 />
+        <img id=p14 src="../img/photo14.jpg" onclick="selPic(14)" width=120 height=80 />
+        <img id=p15 src="../img/photo15.jpg" onclick="selPic(15)" width=120 height=80 />
+        <img id=p16 src="../img/photo16.jpg" onclick="selPic(16)" width=120 height=80 />
+
+    </p>
+</body>
+</html>
